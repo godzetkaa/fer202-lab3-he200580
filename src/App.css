@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+﻿.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 1px solid #ccc;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.brand { font-weight: bold; }
+.nav-links { display: flex; gap: 16px; }
+.home { text-align: center; margin-top: 40px; }
+.search-form, .category-filter { margin-bottom: 12px; }
+.search-form, .search-controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+label { margin-right: 8px; }
+input, select, button { padding: 5px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+.pagination { display: flex; align-items: center; gap: 12px; margin-top: 16px; }
+dl > div { margin-bottom: 12px; }
+dt { font-weight: bold; }
+dd { margin: 4px 0 0; }
